@@ -1,15 +1,15 @@
-# Makefile for Assignment1
+# Makefile for Password Manager
 # Compiler
 CXX = g++
 # Compiler flags
 CXXFLAGS = -Wall -std=c++17
 
 # Target executable
-TARGET = Assignment1
+TARGET = password_manager
 
 # Source files
-SRCS = Assignment1.cc 
-OBJS = $(SRCS:.cc=.o)
+SRCS = password_manager.cpp 
+OBJS = $(SRCS:.cpp=.o)
 # Default rule  
 all: $(TARGET)
 
@@ -18,7 +18,7 @@ $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
 
 # Compile source files into object files
-%.o: %.cc
+%.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Clean up build files
