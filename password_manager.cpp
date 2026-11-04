@@ -1,6 +1,6 @@
 /*
 Name: Layan Khalaf
-Student ID: 991274007
+Student ID: 1234
 Password Management System
 Winter 2026
 */
@@ -418,7 +418,7 @@ int main() {
     PasswordStorage storage(" Password Storage");
     
     // Add 10 password items to the store with various categories
-storage.add_PasswordItem(PasswordItem(0, "Gmail", "Email", "Layan.khalaf@gmail.com", "gmailPass123"));
+storage.add_PasswordItem(PasswordItem(0, "Gmail", "Email", "user@example.com", "examplePass123"));
 storage.add_PasswordItem(PasswordItem(0, "Outlook", "Email2", "Zaina@outlook.com", "OutlookPass123"));
 storage.add_PasswordItem(PasswordItem(0, "RBC", "Bank", "RBC_user", "RBCBank123"));
 storage.add_PasswordItem(PasswordItem(0, "TD Bank", "Finance", "TD_User", "TDBank123"));
